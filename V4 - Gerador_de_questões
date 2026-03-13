@@ -1,0 +1,64 @@
+import unicodedata
+questoes = {
+    'matematica':[
+        {'pergunta':'Um produto custava R$ 80,00. Após um desconto de 25%, qual é o novo preço?\n(A)R$60,00\n(B)R$20,00\n(C)R$55,00\n(D)R$100,00\n(E)R$42,00', 'resposta':'A'},
+        {'pergunta':'Uma bactéria se multiplica por 2 a cada hora. Se inicialmente há 3 bactérias, quantas haverá após 4 horas?\n(A)48\n(B)24\n(C)12\n(D)16\n(E)37','resposta':'A'},
+        {'pergunta':'Quanto é 27+35?\n(A)62\n(B)512\n(C)52\n(D)23\n(E)90','resposta':'A'},
+        {'pergunta':'Um terreno quadrado tem área igual a 144 m². Qual é o comprimento de cada lado?\n(A)15\n(B)12\n(C)72\n(D)36\n(E)18','resposta':'B'},
+        {'pergunta':'Um cubo tem volume igual a 125 cm³. Qual é o comprimento da aresta?\n(A)25\n(B)3\n(C)6\n(D)5\n(E)12','resposta':'D'},
+        {'pergunta':'Uma população dobra a cada 3 anos. Se atualmente há 500 pessoas, quantas haverá após 9 anos?\n(A)4000\n(B)1500\n(C)8000\n(D)4500\n(E)6000','resposta':'A'},
+        ],
+    'feedback_mat':[
+        {'analise':'Alternativa A, Explicação: Você aplicou a estratégia de solução correta que seria 80 - (80 X 0,25)','avaliação':'Proficiência em cálculo de porcentagem e interpretação de problemas financeiros.','analise':'Alternativa B, Explicação: Você aplicou a estratégia de solução 80 X 0,25 = 20.','avaliação':'Dificuldade em distinguir o valor do desconto do valor final do produto.','analise':'Alternativa C, Explicação:', 'avaliação':'Confusão conceitual entre porcentagem (%) e valores absolutos (subtração direta).','analise':'Alternativa D, Explicação:','avaliação':'Incompreensão do termo "desconto", confundindo-o com acréscimo ou juros.','analise':'Alternativa E, Explicação:','analise':'Ausência de estratégia de cálculo ou desconhecimento do conteúdo.'},
+        {'analise':'Alternativa A, Explicação:','avaliação':'Domínio de funções exponenciais e análise de crescimento por ciclos.', 'analise':'Alternativa B, Explicação:','avaliação':'Confusão entre crescimento exponencial e crescimento linear (multiplicação simples).','analise':'Alternativa C, Explicação:','avaliação':'Dificuldade na interpretação de escala, focando apenas nos números base do enunciado.','analise':'Alternativa D, Explicação','avaliação':'Ignora o valor inicial da amostra, focando apenas na potência da base.','analise':'Alternativa E, Explicação','avaliação':'Erro de atenção severo ou palpite sem fundamento técnico.'},
+        {'analise':'Alternativa A, Explicação:','avaliação':'Proficiência em adição com reagrupamento (reserva) e domínio do sistema decimal.','analise':'Alternativa B, Explicação','avaliação':'Incompreensão do valor posicional; o aluno trata as somas das colunas como números independentes e os justapõe.','analise':'Alternativa C, Explicação','avaliação':'Dificuldade no processo de reagrupamento; o aluno realiza a soma das unidades mas esquece de somar a dezena "reservada" à coluna seguinte.','analise':'Alternativa D','avaliação':'Indício de descalculia ou erro de processamento visual (inversão de dígitos ou confusão entre os números do enunciado).','analise':'Alternativa E, explicação','avaliação':'Ausência de estratégia de cálculo ou tentativa de adivinhação (chute).'},
+        {'analise':'Alternativa A, Explicação:','avaliação':'Falta de precisão no cálculo de raízes quadradas perfeitas.','analise':'Alternativa B, Explicação','avaliação':'Domínio de relações métricas em polígonos regulares e radiciação.','analise':'Alternativa C, Explicação','avaliação':'Confusão entre o conceito de raiz quadrada e divisão por dois (metade).','analise':'Alternativa D, Explicação','avaliação':'Dificuldade em diferenciar as fórmulas de área e perímetro.','analise':'Alternativa E, explicação','avaliação':'Uso de estimativa incorreta sem aplicação de fórmula geométrica.'},
+        {'analise':'Alternativa A, explicação','avaliação':'Confusão entre cálculo de área de superfície e cálculo de volume (aresta).','analise':'Alternativa B, explicação','avaliação':'Confunde o valor da dimensão (aresta) com o índice da potência (cubo).','analise':'Alternativa C, explicação','avaliação':'Erro de cálculo por tentativa e erro em potências de base baixa.','analise':'Alternativa D','avaliação':'Domínio de geometria espacial e cálculo de raiz cúbica.','analise':'Alternativa E, explicação','avaliação':'Dificuldade em visualizar a tridimensionalidade do objeto.'},
+        {'analise':'Alternativa A, explicação','avaliação':'Capacidade de modelagem de problemas de crescimento por intervalos de tempo.','analise':'Alternativa B, explicação','avaliação':'Aplicação incorreta de lógica de progressão aritmética em vez de geométrica.','analise':'Alternativa C, explicação','avaliação':'Erro na contagem de ciclos de tempo, calculando um ciclo a mais.','analise':'Alternativa D, explicação','avaliação':'Confusão entre o valor da população e a multiplicação direta pelo tempo total.','analise':'Alternativa E, explicação','avaliação':'Dificuldade em organizar os dados do problema em uma sequência lógica.'}
+    ],
+    'fisica':[
+        {'pergunta':'Um carro percorre 150 km em 3 horas. Qual é a velocidade média?\n(A)50KM/h\n(B)450KM/h\n(C)147KM/h\n(D)0,02KM/h\n(E)76KM/h','resposta':'A'},
+        {'pergunta':'Um objeto move-se com velocidade constante de 10 m/s durante 5 segundos. Qual a distância percorrida?\n(A)2m\n(B)0,5m\n(C)50m\n(D)15m\n(E)120m','resposta':'C'},
+        {'pergunta':'Qual é o peso de um corpo de massa 5 kg na Terra? Considere g=10m/s².\n(A)2N\n(B)0,5N\n(C)50N\n(D)15N\n(E)30N','resposta':'C'},
+        {'pergunta':'Um objeto de 2 kg move-se a 3 m/s. Qual é a sua energia cinética?\n(A)6J\n(B)18J\n(C)4,6J\n(D)12J\n(E)9J','resposta':'E'},
+        {'pergunta':'Uma força de 50 N desloca um objeto por 4 metros. Qual o trabalho realizado?\n(A)200J\n(B)12,5J\n(C)46J\n(D)54J\n(E)600J','resposta':'A'},
+        {'pergunta':'Um resistor de 10 Ω é ligado a uma tensão de 20 V. Qual é a corrente elétrica?\n(A)200A\n(B)0,5A\n(C)2A\n(D)10A\n(E)6A','resposta':'C'}
+    ],
+    'feedback_fis':[
+        {'analise':'Alternativa A, explicação','avaliação':'Domínio do conceito de razão entre espaço e tempo.','analise':'Alternativa B','avaliação':'Confusão operacional; o aluno multiplica as variáveis em vez de dividi-las.','analise':'Alternativa C,explicação','avaliação':'Incompreensão da grandeza física; tenta resolver o problema por subtração aritmética simples.','analise':'Alternativa D, explicação','avaliação':'Erro de inversão na fórmula; divide o tempo pela distância.','analise':'Alternativa E, explicação','avaliação':'Ausência de estratégia física; possível tentativa de acerto por estimativa incorreta.'},
+        {'analise':'Alternativa A, explicação','avaliação':'Confusão na manipulação da fórmula; isolou a variável de distância de forma incorreta.','analise':'Alternativa B, explicação','avaliação':'Dificuldade em identificar a operação inversa para encontrar o deslocamento.','analise':'Alternativa C, explicação','avaliação':'Proficiência em movimento uniforme e relação entre velocidade e tempo.','analise':'Alternativa D, explicação','avaliação':'Erro conceitual básico; somou as grandezas de natureza diferente.','analise':'Alternativa E, explicação','avaliação':'Dificuldade na interpretação do enunciado e aplicação de dados.'},
+        {'analise':'Alternativa A, explicação','avaliação':'Erro na aplicação da Segunda Lei de Newton aplicada à gravidade.','analise':'Alternativa B, explicação','avaliação':'Dificuldade operacional em problemas de força peso e aceleração da gravidade.','analise':'Alternativa C, explicação','avaliação':'Domínio completo da relação entre massa, força peso e campo gravitacional.','analise':'Alternativa D, explicação','avaliação':'Confusão entre somar variáveis e aplicar o produto vetorial da força.','analise':'Alternativa E, explicação','avaliação':'Falta de base conceitual sobre a influência da gravidade terrestre.'},
+        {'analise':'Alternativa A, explicação','avaliação':'Ignora a dependência quadrática da velocidade na energia cinética.','analise':'Alternativa B, explicação','avaliação':'Calcula o produto da massa pelo quadrado da velocidade, mas esquece o fator de divisão.','analise':'Alternativa C, explicação','avaliação':'Erro de precisão e falta de aplicação da fórmula correta de energia.','analise':'Alternativa D, explicação','avaliação':'Tentativa de cálculo linear para uma grandeza de natureza quadrática.','analise':'Alternativa E, explicação','avaliação':'Proficiência em física mecânica e cálculo de energia em movimento,'},
+        {'analise':'Alternativa A, explicação','avaliação':'Domínio do conceito de trabalho como produto da força pelo deslocamento e uso correto da unidade Joule.','analise':'Alternativa B, explicação','avaliação':'Confusão operacional; o aluno dividiu a força pela distância.','analise':'Alternativa C, explicação','avaliação':'Dificuldade na interpretação das grandezas; tentou resolver o problema por subtração simples.','analise':'Alternativa D, explicação','avaliação':'Erro de lógica aritmética; tentou somar grandezas físicas de naturezas diferentes (Força + Distância).','analise':'Alternativa E, explicação','avaliação':'Ausência de estratégia física ou erro grosseiro na execução do cálculo multiplicativo.'},
+        {'analise':'Alternativa A, explicação','avaliação':'Confusão na Primeira Lei de Ohm; multiplicou tensão por resistência.','analise':'Alternativa B, explicação','avaliação':'Inverteu a relação de proporcionalidade entre tensão e corrente.','analise':'Alternativa C, explicação','avaliação':'Domínio de circuitos elétricos básicos e relação.','analise':'Alternativa D, explicação','avaliação':'Incompreensão da natureza da resistência elétrica, tratando-a como perda por subtração.','analise':'Alternativa E, explicação','avaliação':'Dificuldade em relacionar grandezas elétricas.'}
+    ],
+}
+n=str(input('Qual matéria você quer matemática ou física?')).lower().strip()
+n=unicodedata.normalize('NFKD', n)
+if n in questoes:
+    perguntas=questoes['matematica']
+    perguntas=questoes['fisica']
+    feedbacks=questoes['feedback_mat']
+    feedbacks=questoes['feedback_fis']
+    ponto=0
+    for i, h in enumerate (perguntas):
+        print(('\n' + h['pergunta']))
+        resposta_usuario = str(input('resposta:')).upper()
+        while True:
+            if resposta_usuario not in ['A', 'B', 'C', 'D', 'E']:
+                print('Resposta inválida!')
+                resposta_usuario = str(input('resposta:')).upper()
+            else:
+                break
+        if resposta_usuario== h['resposta']:
+                print('Acertou!!')
+                fb=feedbacks[i]
+                print(fb['analise'])
+                print(fb['avaliação'])
+                ponto+=1
+        if resposta_usuario != h['resposta']:
+                print('Errada! resposta correta:', h['resposta'])
+
+    print('\nPontuação final:', ponto, 'de',len(perguntas))
+else:
+    print('Matéria inválida')
