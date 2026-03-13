@@ -1,0 +1,80 @@
+nome=str(input('Digite seu nome:'))
+M=str(input('qual matéria você prefere matemática ou física?')).upper()
+if M =='MATEMÁTICA' or M == 'MATEMATICA':
+    print('você escolheu matemática!')
+    mat2 = float(input('Um produto custava R$ 80,00. Após um desconto de 25%, qual é o novo preço?'))
+    C = (80 * (25 / 100))
+    n = 80 - C
+    if mat2 == 60.0:
+        print('VOCÊ ACERTOU!!!')
+    else:
+        print('Você errou')
+        print('\033[7;35;40 a resposta correta é {:.2f} por que 80 X 25/100 = 20 e 80 - 20 é igual a 60 \033[m' .format(n))
+    mt3=int(input('Quanto é 27+35?'))
+    if mt3 == 62:
+        print('Você acertou!!')
+    else:
+        print('Você errou, a solução é (20 + 30) + (7 + 5) = 50 + 12 = 62')
+    mat4=int(input('Uma bactéria se multiplica por 2 a cada hora. Se inicialmente há 3 bactérias, quantas haverá após 4 horas?'))
+    if mat4 == 48:
+        print('Você acertou!!')
+    else:
+        print('Você errou, a resolução é 2 elevado a 4 = 16 então 3 X 16 = 48')
+    mat5=int(input('Um terreno quadrado tem área igual a 144 m². Qual é o comprimento de cada lado?'))
+    if mat5==12:
+        print('Você acertou!!')
+    else:
+        print('Você errou, a resolução é lado = a raiz quadrada de 144 que é igual a 12')
+    mat6=int(input('Um cubo tem volume igual a 125 cm³. Qual é o comprimento da aresta?'))
+    if mat6==5:
+        print('Você acertou!!')
+    else:
+        print('Você errou, a resolução é raiz de 125 ao cubo = 5')
+    mat7=int(input('Uma população dobra a cada 3 anos. Se atualmente há 500 pessoas, quantas haverá após 9 anos?'))
+    if mat7==4000:
+        print('Você acertou!!!')
+    else:
+        print('Você errou, a resolução é 500 X 2 elevado a 3 = 500 X 8 = 4000')
+    print('{} finalizou a lista de questões de {}!'.format(nome, M))
+
+elif M == 'FÍSICA' or M == 'FISICA':
+    print('Você escolheu física!!')
+    fis1=int(input('Um carro percorre 150 km em 3 horas. Qual é a velocidade média?'))
+    if fis1 == 50:
+        print('Você acertou!!')
+    else:
+        print('Você errou, a resolução é 150/3 = 50km/h')
+    fis2=int(input('Um objeto se move com velocidade constante de 10 m/s durante 5 segundos. Qual a distância percorrida?'))
+    if fis2 == 50:
+         print('Você acertou!!')
+    else:
+         print('Você errou, a resolução é 10 m/s X 5 segundo = 50m/s')
+    fis3=int(input('Uma força de 20 N é aplicada a um corpo de massa 4 kg. Qual é a aceleração?'))
+    if fis3 == 5:
+         print('Você acertou!!')
+    else:
+         print('Você errou, a resolução é  20N / 4kg = 5m/s²')
+    fis4=int(input('Qual é o peso de um corpo de massa 5 kg na Terra? Considere 𝑔=10m/s'))
+    if fis4 == 50:
+         print('Você acertou!')
+    else:
+         print('Você errou, a resolução é 5kg X 10m/s² = 50N')
+    fis5=int(input('Um objeto de 2 kg se move a 3 m/s. Qual é sua energia cinética?'))
+    if fis5 == 9:
+         print('Você acertou')
+    else:
+         print('Você errou, a resolução é Ec=1/2 X 2 X 3² = 9')
+    fis6=int(input('Uma força de 50 N desloca um objeto por 4 metros. Qual o trabalho realizado?'))
+    if fis6 == 200:
+         print('Você acertou!')
+    else:
+         print('Você errou, a resolução é 50N X 4 m = 200')
+    fis7=int(input('Um resistor de 10 Ω é ligado a uma tensão de 20 V. Qual é a corrente elétrica?'))
+    if fis7 == 2:
+         print('Você acertou')
+    else:
+         print('Você errou, a resolução é 20/10 = 2A')
+    print('{} finalizou a lista de questões de {}!'.format(nome, M))
+
+elif M != ('MATEMATICA') and ('MATEMÁTICA') and ('FISICA') or ('FÍSICA'):
+    print('\033[31m POR FAVOR, TENTE NOVAMENTE! \033[m')
