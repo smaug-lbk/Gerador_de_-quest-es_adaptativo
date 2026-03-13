@@ -1,0 +1,168 @@
+nome=str(input('Qual o seu nome?'))
+n=str(input('Qual matéria você escolhe matemática ou física?')).upper().strip()
+if n== 'MATEMÁTICA' or n=='MATEMATICA':
+    print('Você escolheu matemática!!')
+    p1=str(input('''Um produto custava R$ 80,00. Após um desconto de 25%, qual é o novo preço:
+    (A) R$ 80,00
+    (B) R$ 60,00
+    (C) R$ 50,00
+    (D) R$ 39,00
+    (E) R$ 20,00''')).upper()
+    if p1== 'B':
+        print('\033[32m Resposta CORRETA!\033[m')
+    elif p1 in ['A','C','D','E']:
+        print('\033[31m Resposta INCORRETA!\033[m')
+    elif  p1 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta inválida!\033[m')
+    p2=str(input('''Quanto é 27+35?
+    (A) 62
+    (B) 23
+    (C) 90
+    (D) 21
+    (E) 12''')).upper()
+    if p2 == 'A':
+         print('\033[32m Resposta CORRETA!\033[m')
+    elif p2 in ['C','D','E','B']:
+        print('\033[31m Resposta INCORRETA!\033[m')
+    elif  p2 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta INVÁLIDA!\033[m')
+    p3=str(input('''Uma bactéria se multiplica por 2 a cada hora. Se inicialmente há 3 bactérias, quantas haverá após 4 horas?'
+    (A)45
+    (B)23
+    (C)89
+    (D)48
+    (E)10''')).upper()
+    if p3 == 'D':
+        print('\033[32m Resposta CORRETA!\033[m')
+    elif p3 in ['B','C','A','E']:
+        print('\033[35m Resposta INCORRETA!\033[m')
+    elif p3 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta INVÁLIDA!\033[m')
+    p4=str(input('''Um terreno quadrado tem área igual a 144 m². Qual é o comprimento de cada lado?'
+    (A)15
+    (B)12
+    (C)13
+    (D)18
+    (E)16''')).upper()
+    if p4=='B':
+        print('\033[32m Resposta CORRETA!\033[m')
+    elif p4 in ['C','A','E','D']:
+        print('\033[31m Resposta INCORRETA!\033[m')
+    elif p4 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta INVÁLIDA!\033[m')
+    p5=str(input('''Um cubo tem volume igual a 125 cm³. Qual é o comprimento da aresta?'
+    (A)2
+    (B)3
+    (C)4
+    (D)5
+    (E)6''')).upper()
+    if p5=='D':
+        print('\033[32m Resposta CORRETA!\033[m')
+    elif p5 in ['B','C','A','E']:
+        print('\033[31m Resposta INCORRETA!\033[m')
+    elif p5 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta INVÁLIDA!\033[m')
+    p6=str(input('''Uma população dobra a cada 3 anos. Se atualmente há 500 pessoas, quantas haverá após 9 anos?'
+     (A)4000
+     (B)5000
+     (C)6000
+     (D)7000
+     (E)8000''')).upper()
+    if p6=='A':
+        print('\033[32m Resposta CORRETA!\033[m')
+    elif p6 in ['B','C','D','E']:
+        print('\033[31m Resposta INCORRETA!\033[m')
+    elif p6 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta INVÁLIDA!\033[m')
+    print('PARABÉNS!! {} terminou a lista!!'.format(nome))
+elif n == 'FÍSICA' or n=='FISICA':
+    print('Você escolheu física!!')
+    p7=str(input('''Um carro percorre 150 km em 3 horas. Qual é a velocidade média?'
+     (A)50
+     (B)34
+     (C)40
+     (D)45
+     (E)76''')).upper()
+    if p7=='A':
+        print('\033[32m Resposta CORRETA!\033[m')
+    elif p7 in ['B','C','D','E']:
+        print('\033[31m Resposta INCORRETA!\033[m')
+    elif p7 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta INVÁLIDA!\033[m')
+    p8=str(input('''Um objeto se move com velocidade constante de 10 m/s durante 5 segundos. Qual a distância percorrida?'
+     (A)23
+     (B)100
+     (C)50
+     (D)89
+     (E)120''')).upper()
+    if p8=='C':
+        print('\033[32m Resposta CORRETA!\033[m')
+    elif p8 in ['A','B','D','E']:
+        print('\033[31m Resposta INCORRETA!\033[m')
+    elif p8 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta INVÁLIDA!\033[m')
+    p9=str(input('''Uma força de 20 N é aplicada a um corpo de massa 4 kg. Qual é a aceleração?
+    (A)2
+    (B)3
+    (C)4
+    (D)5
+    (E)6''')).upper()
+    if p9=='D':
+        print('\033[32m Resposta CORRETA!\033[m')
+    elif p9 in ['A','B','C','E']:
+        print('\033[31m Resposta INCORRETA!\033[m')
+    elif p9 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta INVÁLIDA\033[m')
+    p10=str(input('''Qual é o peso de um corpo de massa 5 kg na Terra? Considere 𝑔=10m/s
+    (A)70
+    (B)60
+    (C)50
+    (D)40
+    (E)30''')).upper()
+    if p10=='C':
+        print('\033[32m Resposta CORRETA!\033[m')
+    elif p10 in ['A','B','D','E']:
+        print('\033[31m Resposta INCORRETA!\033[m')
+    elif p10 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta INVÁLIDA!\033[m')
+    p11=str(input('''Um objeto de 2 kg se move a 3 m/s. Qual é sua energia cinética?
+    (A)12
+    (B)16
+    (C)20
+    (D)23
+    (E)9''')).upper()
+    if p11 == 'E':
+        print('\033[32m Resposta CORRETA!\033[m')
+    elif p11 in ['A','B','C','D']:
+        print('\033[31m Resposta INCORRETA!\033[m')
+    elif p11 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta INVÁLIDA!\033[m')
+    p12=str(input('''Uma força de 50 N desloca um objeto por 4 metros. Qual o trabalho realizado?
+    (A)200
+    (B)300
+    (C)400
+    (D)500
+    (E)600''')).upper()
+    if p12 == 'A':
+        print('\033[32m Resposta CORRETA!\033[m')
+    elif p12 in ['B','C','D','E']:
+        print('\033[31m Resposta INCORRETA!\033[m')
+    elif p12 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta INVÁLIDA!\033[m')
+    p13=str(input('''Um resistor de 10 Ω é ligado a uma tensão de 20 V. Qual é a corrente elétrica?
+    (A)3
+    (B)4
+    (C)2
+    (D)5
+    (E)6''')).upper()
+    if p13 == 'C':
+        print('\033[32m Resposta CORRETA!\033[m')
+    elif p13 in ['A','B','D','E']:
+        print('\033[31m Resposta INCORRETA!\033[m')
+    elif p13 not in ['A','B','C','D','E']:
+        print('\033[35m Resposta INVÁLIDA!\033[m')
+    print('PARABÉNS! {} terminou a lista!!'.format(nome))
+else:
+    print('\033[33m OPÇÃO INVÁLIDA, POR FAVOR ESCOLHA UMA DAS OPÇÕES DISPONÍVEIS!\033[m')
+print('FIM')
+
