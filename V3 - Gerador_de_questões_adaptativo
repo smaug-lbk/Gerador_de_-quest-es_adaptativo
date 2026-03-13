@@ -1,0 +1,41 @@
+import random
+import unicodedata
+questoes = {
+    'matematica':[
+        {'pergunta': 'Um produto custava R$ 80,00. Após um desconto de 25%, qual é o novo preço: \n(A)R$ 80,00\n(B)R$ 60,00\n(C)R$ 50,00\n(D)R$ 39,00\n(E)R$ 20,00', 'resposta:': 'B'},
+        {'pergunta': 'Quanto é 27+35? \n(A)62\n(B)23\n(C)90\n(D)21\n(E)12', 'resposta:': 'A'},
+        {'pergunta': 'Uma bactéria se multiplica por 2 a cada hora. Se inicialmente há 3 bactérias, quantas haverá após 4 horas? \nA)45\n(B)23\n(C)89\n(D)48\n(E)10', 'resposta:': 'D'},
+        {'pergunta': 'Um terreno quadrado tem área igual a 144 m². Qual é o comprimento de cada lado? \n(A)15\n(B)12\n(C)13\n(D)18\n(E)16', 'resposta:': 'B'},
+        {'pergunta': 'Um cubo tem volume igual a 125 cm³. Qual é o comprimento da aresta? \n(A)2\n(B)3\n(C)4\n(D)5\n(E)6', 'resposta:': 'D'},
+        {'pergunta': 'Uma população dobra a cada 3 anos. Se atualmente há 500 pessoas, quantas haverá após 9 anos? \n(A)4000\n(B)5000\n(C)6000\n(D)7000\n(E)8000', 'resposta:': 'A'}
+    ],
+    'fisica':[
+        {'pergunta': 'Um carro percorre 150 km em 3 horas. Qual é a velocidade média?\n(A)50\n(B)34\n(C)40\n(D)45\n(E)76','resposta:':'A'},
+        {'pergunta':'Um objeto se move com velocidade constante de 10 m/s durante 5 segundos. Qual a distância percorrida?\n(A)23\n(B)100\n(C)50\n(D)89\n(E)120', 'resposta:': 'C'},
+        {'pergunta':'Uma força de 20 N é aplicada a um corpo de massa 4 kg. Qual é a aceleração?\n(A)2\n(B)3\n(C)4\n(D)5\n(E)6', 'resposta:':'D'},
+        {'pergunta': 'Qual é o peso de um corpo de massa 5 kg na Terra? Considere 𝑔=10m/s \n(A)70\n(B)60\n(C)50\n(D)40\n(E)30', 'resposta:': 'C'},
+        {'pergunta':'Um objeto de 2 kg se move a 3 m/s. Qual é sua energia cinética?\n(A)12\n(B)16\n(C)20\n(D)23\n(E)9', 'resposta:': 'E'},
+        {'pergunta':'Uma força de 50 N desloca um objeto por 4 metros. Qual o trabalho realizado?\n(A)200\n(B)300\n(C)400\n(D)500\n(E)600}','resposta:': 'A'},
+        {'pergunta':'Um resistor de 10 Ω é ligado a uma tensão de 20 V. Qual é a corrente elétrica?\n(A)3\n(B)4\n(C)2\n(D)5\n(E)6', 'resposta:': 'C'}
+    ]
+}
+n=str(input('Qual matéria você escolhe matemática ou física?')).lower()
+n=unicodedata.normalize('NFKD', n)
+if n in questoes:
+        perguntas=questoes[n]
+        random.shuffle(perguntas)
+        ponto=0
+        for h in perguntas:
+            print(('\n'+ h['pergunta']))
+            resposta_usuario=str(input('resposta:')).upper()
+            if str(h['resposta:']) == resposta_usuario:
+                print('\033[32mAcertou!\033[m')
+                ponto+=1
+            elif resposta_usuario not in ['A','B','C','D','E']:
+                print('\033[35mResposta inválida!')
+            elif resposta_usuario != str(h['resposta:']):
+                print('\033[31mErrou! resposta correta:\033[m', h['resposta:'])
+        print('\nPontuação final:',ponto,'de',len(perguntas))
+
+else:
+    print('\033[1;35mMATÉRIA INVÁLIDA!\033[m')
