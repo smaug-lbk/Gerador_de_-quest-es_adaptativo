@@ -11,22 +11,22 @@ questoes = {
         { #questao 1:
             'A': {'analise':'Alternativa A, Explicação: Você aplicou a estratégia de solução correta que seria 80 - (80 X 0,25)','avaliação':'Proficiência em cálculo de porcentagem e interpretação de problemas financeiros.'},
             'B': {'analise':'Alternativa B, Explicação: Você aplicou a estratégia de solução 80 X 25/100 = 20.','avaliação':'Dificuldade em distinguir o valor do desconto do valor final do produto.'},
-            'C': {'analise':'Alternativa C, Explicação: Você confundiu prcentagem com subtração, ouseja, o cálculo realizado foi 80 - 25 = 55', 'avaliação':'Confusão conceitual entre porcentagem (%) e valores absolutos (subtração direta).'},
+            'C': {'analise':'Alternativa C, Explicação: Você confundiu porcentagem com subtração, ou seja, o cálculo realizado foi 80 - 25 = 55', 'avaliação':'Confusão conceitual entre porcentagem (%) e valores absolutos (subtração direta).'},
             'D': {'analise':'Alternativa D, Explicação: Você confundiu desconto com acréscimo, ou seja, foi realizado o cálculo 80 + 20','avaliação':'Incompreensão do termo "desconto", confundindo-o com acréscimo ou juros.'},
             'E': {'analise':'Alternativa E, Explicação: Você não utilizou nenhum método de cálculo indicando falta de estratégia ou chute','avaliação':'Ausência de estratégia de cálculo ou desconhecimento do conteúdo.'},
         },
         {#questao 2: 
             'A': {'analise':'Alternativa A, Explicação: você aplicou 3 X 2 elevado a 4 = 48','avaliação':'Domínio de funções exponenciais e análise de crescimento por ciclos.'}, 
-            'B': {'analise':'Alternativa B, Explicação: voc~e realizou uma multiplicação linear (3 X 4 X 2) = 24','avaliação':'Confusão entre crescimento exponencial e crescimento linear (multiplicação simples).'},
+            'B': {'analise':'Alternativa B, Explicação: você realizou uma multiplicação linear (3 X 4 X 2) = 24','avaliação':'Confusão entre crescimento exponencial e crescimento linear (multiplicação simples).'},
             'C': {'analise':'Alternativa C, Explicação: Você multiplicou as bactérias iniciais 3 pelo tempo 4, ou seja, 3 X 4 = 12 ','avaliação':'Dificuldade na interpretação de escala, focando apenas nos números base do enunciado.'},
-            'D': {'analise':'Alternativa D, Explicação: Voc~e apenas realizou o cálculo de potência 2 elevado a 4 = 16','avaliação':'Ignora o valor inicial da amostra, focando apenas na potência da base.'},
+            'D': {'analise':'Alternativa D, Explicação: Você apenas realizou o cálculo de potência 2 elevado a 4 = 16','avaliação':'Ignora o valor inicial da amostra, focando apenas na potência da base.'},
             'E': {'analise':'Alternativa E, Explicação: Você chutou ou demonstra pouco conhecimento nesse conteúdo','avaliação':'Erro de atenção severo ou palpite sem fundamento técnico.'},
         },
         {#questao 3:
             'A':{'analise':'Alternativa A, Explicação: Realizou a soma corretamente','avaliação':'Proficiência em adição com reagrupamento (reserva) e domínio do sistema decimal.'},
             'B': {'analise':'Alternativa B, Explicação: Você realizou 2+3 = 5 e 7+5 = 12 e juntou os resultados 5+12 = 512','avaliação':'Incompreensão do valor posicional; o aluno trata as somas das colunas como números independentes e os justapõe.'},
             'C': {'analise':'Alternativa C, Explicação: Você somou as unidades 2+3 = 5 e 7+5 = 12 realizou a junção dos resultados mas esqueceu da dezena então somou 5+2 = 52 ','avaliação':'Dificuldade no processo de reagrupamento; o aluno realiza a soma das unidades mas esquece de somar a dezena "reservada" à coluna seguinte.'},
-            'D': {'analise':'Alternativa D, Explicação: ','avaliação':'Indício de descalculia ou erro de processamento visual (inversão de dígitos ou confusão entre os números do enunciado).'},
+            'D': {'analise':'Alternativa D, Explicação: ###','avaliação':'Indício de descalculia ou erro de processamento visual (inversão de dígitos ou confusão entre os números do enunciado).'},
             'E': {'analise':'Alternativa E, Explicação: Você provavelmente chutou ou foi erro de atenção','avaliação':'Ausência de estratégia de cálculo ou tentativa de adivinhação (chute).'},
         },
         {#questao 4:
@@ -38,16 +38,16 @@ questoes = {
         },
         {#questao 5:
             'A': {'analise':'Alternativa A, Explicação: Confundiu o expoente com o valor da medida da aresta','avaliação':'Confusão entre cálculo de área de superfície e cálculo de volume (aresta).'},
-            'B': {'analise':'Alternativa B, Explicação: confundiu o expoente com o valor da media da aresta','avaliação':'Confunde o valor da dimensão (aresta) com o índice da potência (cubo).'},
+            'B': {'analise':'Alternativa B, Explicação: confundiu o expoente com o valor da média da aresta','avaliação':'Confunde o valor da dimensão (aresta) com o índice da potência (cubo).'},
             'C': {'analise':'Alternativa C, Explicação: Erro por aproximação incorreta em potências de base baixa','avaliação':'Erro de cálculo por tentativa e erro em potências de base baixa.'},
             'D': {'analise':'Alternativa D, Explicação: Calculou a raiz cúbica do volume corretamente','avaliação':'Domínio de geometria espacial e cálculo de raiz cúbica.'},
             'E': {'analise':'Alternativa E, Explicação: Dificuldade em visualizar a tridimensionalidade e a escala do objetivo','avaliação':'Dificuldade em visualizar a tridimensionalidade do objeto.'},
         },
         {#questao 6:
-             'A': {'analise':'Alternativa A, Explicação: Indetificou que em 9 anos ocorrem 3 ciclos de dobra','avaliação':'Capacidade de modelagem de problemas de crescimento por intervalos de tempo.'},
+             'A': {'analise':'Alternativa A, Explicação: Idetificou que em 9 anos ocorrem 3 ciclos de dobra','avaliação':'Capacidade de modelagem de problemas de crescimento por intervalos de tempo.'},
              'B': {'analise':'Alternativa B, Explicação: Aplicou lógica de progressão aritmética','avaliação':'Aplicação incorreta de lógica de progressão aritmética em vez de geométrica.'}, 
              'C': {'analise':'Alternativa C, Explicação: Erro na contagem de intervalos, assim, calculando um ciclo a mais','avaliação':'Erro na contagem de ciclos de tempo, calculando um ciclo a mais.'},
-             'D': {'analise':'Alternativa D, Explicação: Multiplicou a população incial pelo tempo total(500 X 9)','avaliação':'Confusão entre o valor da população e a multiplicação direta pelo tempo total.'},
+             'D': {'analise':'Alternativa D, Explicação: Multiplicou a população inicial pelo tempo total (500 X 9)','avaliação':'Confusão entre o valor da população e a multiplicação direta pelo tempo total.'},
              'E': {'analise':'Alternativa E, Explicação: Dificuldade em organizar em uma sequência lógica de tempo','avaliação':'Dificuldade em organizar os dados do problema em uma sequência lógica.'},
         },
     ],
@@ -71,14 +71,14 @@ questoes = {
             'A': {'analise':'Alternativa A, Explicação: Inverteu a fórmula de tempo e velocidade então 10/5 = 2','avaliação':'Confusão na manipulação da fórmula; isolou a variável de distância de forma incorreta.'},
             'B': {'analise':'Alternativa B, Explicação: Divisão incorreta da velocidade pelo tempo 5/10 = 0,5','avaliação':'Dificuldade em identificar a operação inversa para encontrar o deslocamento.'},
             'C': {'analise':'Alternativa C, Explicação: Multiplicou velocidade por tempo corretamente','avaliação':'Proficiência em movimento uniforme e relação entre velocidade e tempo.'},
-            'D': {'analise':'Alternativa D, Explicação: Somou grandezas de naturezas diferentes (velocidade + tempo) ou seja, 10 + 5 = 15','avaliação':'Erro conceitual básico; somou as grandezas de natureza diferente.'},
+            'D': {'analise':'Alternativa D, Explicação: Somou grandezas de naturezas diferentes (velocidade + tempo) ou seja, 10 + 5 = 15','avaliação':'Erro conceitual básico, somou as grandezas de natureza diferente.'},
             'E': {'analise':'Alternativa E, Explicação: Erro na interpretação ou multiplicação','avaliação':'Dificuldade na interpretação do enunciado e aplicação de dados.'},
         },
         {#questao 3:
-             'A': {'analise':'Alternativa A, Explicação: Operação inversa (dividiu a gravidade pela massa) ou seja, 10/5 = 2','avaliação':'Erro na aplicação da Segunda Lei de Newton aplicada à gravidade.'},
+             'A': {'analise':'Alternativa A, Explicação: Operação inversa dividiu a gravidade pela massa, ou seja, 10/5 = 2','avaliação':'Erro na aplicação da Segunda Lei de Newton aplicada à gravidade.'},
              'B': {'analise':'Alternativa B, Explicação: Erro de inversão na divisão 5/10 = 0,5','avaliação':'Dificuldade operacional em problemas de força peso e aceleração da gravidade'},
              'C': {'analise':'Alternativa C, Explicação: Aplicou a Segunda Lei de Newton','avaliação':'Domínio completo da relação entre massa, força peso e campo gravitacional.'},
-             'D': {'analise':'Alternativa D, Explicação: Somou as variáveis (massa+gravidade) em vez de multiplicá-las, dessa forma, 5 + 10 = 15','avaliação':'Confusão entre somar variáveis e aplicar o produto vetorial da força.'},
+             'D': {'analise':'Alternativa D, Explicação: Somou as variáveis (massa+gravidade) ao invés de multiplicá-las, dessa forma, 5 + 10 = 15','avaliação':'Confusão entre somar variáveis e aplicar o produto vetorial da força.'},
              'E': {'analise':'Alternativa E, Explicação: Falta de base sobre constante gravitacional terrestre','avaliação':'Falta de base conceitual sobre a influência da gravidade terrestre.'},
         },
        {#questoes 4:
@@ -124,9 +124,14 @@ for i, h in enumerate (perguntas_do_quiz):
         resposta_usuario = str(input('resposta:')).upper()
     if resposta_usuario == h['resposta']:
         ponto+=1
+        print('Parabéns você acertou!!')
+    else:
+        print('Que pena, você errou')
     if n == 'MATEMATICA':
         print('\nDiagnóstico: {}'.format(feedback_do_quiz[i][resposta_usuario]['analise']))
     elif n == 'FISICA':
         print('\nDiagnóstico: {}'.format(feedback_do_quiz[i][resposta_usuario]['analise']))
+
+#RESULTADO FINAL
 print('\nVocê acertou: {} de {}'.format(ponto, len(perguntas_do_quiz)))
 print('Acabou a lista!!')
