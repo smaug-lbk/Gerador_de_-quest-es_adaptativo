@@ -1,2 +1,2 @@
-# Gerador_de_-quest-es_adaptativo
+# Gerador_de_questoes_adaptativo
 versões do gerador de questões adaptativo
